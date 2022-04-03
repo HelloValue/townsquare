@@ -1,8 +1,6 @@
 name: Docker Image CI CD # Actions名称
 on:
-  pull_request:
-    types: 
-     - closed
+  push:
     branches: 
      - master
 jobs:
@@ -19,10 +17,10 @@ jobs:
         docker tag clocktower ccr.ccs.tencentyun.com/caozenghuang/clocktower:latest
         docker push ccr.ccs.tencentyun.com/caozenghuang/clocktower:latest
     # 使用appleboy/ssh-action@master登录服务器执行拉取镜像脚本，服务器ip、用户名、密码配置方式同容器镜像服务配置方式一样
-    - name: ssh docker login
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.TECENT_SERVER }}
-        username: ${{ secrets.TECENT_SERVER_USER }}
-        password: ${{ secrets.TECENT_SERVER_PASSWORD }}
-        script: cd ~ && sh lizonghao.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
+    # - name: ssh docker login
+    #   uses: appleboy/ssh-action@master
+    #   with:
+    #     host: ${{ secrets.TECENT_SERVER }}
+    #     username: ${{ secrets.TECENT_SERVER_USER }}
+    #     password: ${{ secrets.TECENT_SERVER_PASSWORD }}
+    #     script: cd ~ && sh lizonghao.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
