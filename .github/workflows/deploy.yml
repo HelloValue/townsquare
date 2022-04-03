@@ -32,4 +32,4 @@ jobs:
         host: ${{ secrets.TECENT_SERVER }}
         username: ${{ secrets.TECENT_SERVER_USER }}
         password: ${{ secrets.TECENT_SERVER_PASSWORD }}
-        script: cd ~ && sh clocktower_run.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
+        script: cd ~ && sh clocktower_run.sh ${{ secrets.TECENT_DOCKER_USERNAME }} ${{ secrets.TECENT_DOCKER_USERNAME }}
