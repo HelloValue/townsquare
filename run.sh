@@ -1,6 +1,6 @@
 #bin/bash
 echo -e "---------docker Login--------"
-docker login --username=$1 ccr.ccs.tencentyun.com --password=$2
+echo $2 | docker login --username=$1 ccr.ccs.tencentyun.com --password-stdin
 echo -e "---------docker Stop--------"
 docker stop clocktower
 echo -e "---------docker Rm--------"
