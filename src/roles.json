@@ -104,7 +104,7 @@
     "otherNightReminder": "The previously protected player is no longer protected. The Monk points to a player not themself. Mark that player 'Protected'.",
     "reminders": ["Protected"],
     "setup": false,
-    "ability": "每个夜晚*，选择一名玩家（除了自己）：恶魔的能力在今晚不会对那名玩家生效。"
+    "ability": "每个夜晚*，选择一名玩家（除了自己）：恶魔的能力在今晚不会对那名玩家生效。不能重复指定同一个人。"
   },
   {
     "id": "ravenkeeper",
@@ -235,7 +235,7 @@
     "otherNightReminder": "The previously poisoned player is no longer poisoned. The Poisoner points to a player. That player is poisoned.",
     "reminders": ["Poisoned"],
     "setup": false,
-    "ability": "每个夜晚，选择一名玩家：那名玩家今晚和明天白天会中毒。"
+    "ability": "每个夜晚，选择一名玩家：那名玩家今晚和明天白天会中毒。不能重复选择同一个人。"
   },
   {
     "id": "spy",
@@ -291,7 +291,7 @@
   },
   {
     "id": "bureaucrat",
-    "name": "Bureaucrat",
+    "name": "官员",
     "edition": "tb",
     "team": "traveler",
     "firstNight": 1,
@@ -300,11 +300,11 @@
     "otherNightReminder": "The Bureaucrat points to a player. Put the Bureaucrat's '3 votes' reminder by the chosen player's character token.",
     "reminders": ["3 votes"],
     "setup": false,
-    "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow."
+    "ability": "每个夜晚，选择一名其他玩家，明天他的一票视为三票。"
   },
   {
     "id": "thief",
-    "name": "Thief",
+    "name": "盗贼",
     "edition": "tb",
     "team": "traveler",
     "firstNight": 1,
@@ -313,11 +313,11 @@
     "otherNightReminder": "The Thief points to a player. Put the Thief's 'Negative vote' reminder by the chosen player's character token.",
     "reminders": ["Negative vote"],
     "setup": false,
-    "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow."
+    "ability": "每个夜晚，选择一名其他玩家，明天他的票视为负数。"
   },
   {
     "id": "gunslinger",
-    "name": "Gunslinger",
+    "name": "枪手",
     "edition": "tb",
     "team": "traveler",
     "firstNight": 0,
@@ -326,11 +326,11 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die."
+    "ability": "每个白天，当第一次投票结束后，你可以选择一名投票的玩家，那名玩家死亡。"
   },
   {
     "id": "scapegoat",
-    "name": "Scapegoat",
+    "name": "替罪羊",
     "edition": "tb",
     "team": "traveler",
     "firstNight": 0,
@@ -339,11 +339,11 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "If a player of your alignment is executed, you might be executed instead."
+    "ability": "如果一名阵营与你相同的玩家将要被处决，你可能代替他被处决。"
   },
   {
     "id": "beggar",
-    "name": "Beggar",
+    "name": "乞丐",
     "edition": "tb",
     "team": "traveler",
     "firstNight": 0,
@@ -352,7 +352,7 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "You must use a vote token to vote. Dead players may choose to give you theirs. If so, you learn their alignment."
+    "ability": "你必须使用投票标记才能投票。死亡的玩家可以将自己的投票标记交给你，你得知他的阵营。你不会中毒或醉酒。"
   },
   {
     "id": "grandmother",
@@ -378,7 +378,7 @@
     "otherNightReminder": "The previously drunk player is no longer drunk. The Sailor points to a living player. Either the Sailor, or the chosen player, is drunk.",
     "reminders": ["Drunk"],
     "setup": false,
-    "ability": "每个夜晚，选择一名存活玩家：你或该玩家之一会醉酒到第二天黄昏；你不会死亡（不会死亡是一个常驻能力，但如果你因为任何原因醉酒或中毒，你的免死能力会无效）"
+    "ability": "每个夜晚，选择一名存活玩家：你或该玩家之一会醉酒到第二天黄昏；你不会死亡。（不会死亡是一个常驻能力，但如果你因为任何原因醉酒或中毒，你的免死能力会无效）"
   },
   {
     "id": "chambermaid",
@@ -391,7 +391,7 @@
     "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, \u2026) for how many of those players wake tonight for their ability.",
     "reminders": [],
     "setup": false,
-    "ability": "每个夜晚，选择除自己以外的两名存活玩家：你会得知在这两名玩家中，因自身能力在今夜醒来的总玩家数。（例：侍女选择了旅店者板和被驱魔师禁止醒来的恶魔，则会得知1：旅店者板夜里会醒来，而恶摩被驱魔师禁止醒来"
+    "ability": "每个夜晚，选择除自己以外的两名存活玩家：你会得知在这两名玩家中，因自身能力在今夜醒来的总玩家数。（例：侍女选择了旅店者板和被驱魔师禁止醒来的恶魔，则会得知1：旅店者板夜里会醒来，而恶魔被驱魔师禁止醒来）"
   },
   {
     "id": "exorcist",
@@ -404,7 +404,7 @@
     "otherNightReminder": "The Exorcist points to a player, different from the previous night. If that player is the Demon: Wake the Demon. Show the Exorcist token. Point to the Exorcist. The Demon does not act tonight.",
     "reminders": ["Chosen"],
     "setup": false,
-    "ability": "每个夜晚*，选择一名玩家（须与前一夜不同）：如果你选中了恶魔，则恶魔会得知你是驱魔师，但他当晚不会因自己的能力醒来（如果你选中了恶魔，你并不会得知你选中了，会在驱魔师入踵后由说书人单独唤醒恶魔，提示他的技能因驱魔师无效，同时告知恶魔谁是驱魔师）"
+    "ability": "每个夜晚*，选择一名玩家（须与前一夜不同）：如果你选中了恶魔，则恶魔会得知你是驱魔师，但他当晚不会因自己的能力醒来。（如果你选中了恶魔，你并不会得知你选中了，会在驱魔师入睡后由说书人单独唤醒恶魔，提示他的技能因驱魔师无效，同时告知恶魔谁是驱魔师）"
   },
   {
     "id": "innkeeper",
@@ -418,7 +418,7 @@
     "reminders": ["Protected",
         "Drunk"],
     "setup": false,
-    "ability": "每个夜晚*，选择两名玩家：这两名玩家今晚不会死去，但其中一名会醉酒到第二天黄昏（旅店老板可以选择自己，但如果因此让自己醉酒，则今晚他选择的两名玩家都不再免死，因为他的技能失效了）"
+    "ability": "每个夜晚*，选择两名玩家：这两名玩家今晚不会死去，但其中一名会醉酒到第二天黄昏。（旅店老板可以选择自己，但如果因此让自己醉酒，则今晚他选择的两名玩家都不再免死，因为他的技能失效了）"
   },
   {
     "id": "gambler",
@@ -431,7 +431,7 @@
     "otherNightReminder": "The Gambler points to a player, and a character on their sheet. If incorrect, the Gambler dies.",
     "reminders": ["Dead"],
     "setup": false,
-    "ability": "每个夜晚*，选择一名玩家并猜测那名玩家的角色：如果你猜错了，那么你会死亡（赌徒可以猜测自己的角色）"
+    "ability": "每个夜晚*，选择一名玩家并猜测那名玩家的角色：如果你猜错了，那么你会死亡。（赌徒可以猜测自己的角色）"
   },
   {
     "id": "gossip",
@@ -444,7 +444,7 @@
     "otherNightReminder": "If the Gossip\u2019s public statement was true: Choose a player not protected from dying tonight. That player dies.",
     "reminders": ["Dead"],
     "setup": false,
-    "ability": "每个白天，你可以做出一项公开声明，【在当晚，如果该声明是正确的】，则会有一位玩家死亡（发言以“我要发表公开声明”为开头并且被说书人确认听到了你的声明；即使白天造谣者醉酒或中毒，只要造谣者夜晚脱离醉酒或中毒，也能触发技能，死亡的玩家由说书人选择，说书人只能选择不受任何免死保护的玩家死亡）"
+    "ability": "每个白天，你可以做出一项公开声明，【在当晚，如果该声明是正确的】，则会有一位玩家死亡。（发言以“我要发表公开声明”为开头并且被说书人确认听到了你的声明；即使白天造谣者醉酒或中毒，只要造谣者夜晚脱离醉酒或中毒，也能触发技能，死亡的玩家由说书人选择，说书人只能选择不受任何免死保护的玩家死亡）"
   },
   {
     "id": "courtier",
@@ -474,7 +474,7 @@
     "reminders": ["Alive",
         "No ability"],
     "setup": false,
-    "ability": "每局游戏限一次，在夜晚时，选择一名当前处于死亡状态的玩家，如果那名玩家是村民，则被复活。（必须选择你当前认为合法的玩家，且可能会被说书人告知当前选择的目标不合法（比如该玩家可能刷刷被巨鳄复活）"
+    "ability": "每局游戏限一次，在夜晚时，选择一名当前处于死亡状态的玩家，如果那名玩家是村民，则被复活。（必须选择你当前认为合法的玩家，且可能会被说书人告知当前选择的目标不合法（比如该玩家可能刚刚被巨鳄复活）"
   },
   {
     "id": "minstrel",
@@ -487,7 +487,7 @@
     "otherNightReminder": "",
     "reminders": ["Everyone drunk"],
     "setup": false,
-    "ability": "当一名爪牙因为被处决而死去时，所有其他玩家（旅行者除外）会醉酒到第二天黄昏."
+    "ability": "当一名爪牙因为被处决而死去时，所有其他玩家（旅行者除外）会醉酒到第二天黄昏。"
   },
   {
     "id": "tealady",
@@ -500,7 +500,7 @@
     "otherNightReminder": "",
     "reminders": ["Can not die"],
     "setup": false,
-    "ability": "如果你的左右两侧最靠近你的存活玩家均为善良阵营，那么这两名玩家不会死亡."
+    "ability": "如果你的左右两侧最靠近你的存活玩家均为善良阵营，那么这两名玩家不会死亡。"
   },
   {
     "id": "pacifist",
@@ -513,7 +513,7 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "被处决的善良玩家也许不会死亡."
+    "ability": "被处决的善良玩家也许不会死亡。"
   },
   {
     "id": "fool",
@@ -526,7 +526,7 @@
     "otherNightReminder": "",
     "reminders": ["No ability"],
     "setup": false,
-    "ability": "当你第一次将要死去时，你不会死亡."
+    "ability": "当你第一次将要死去时，你不会死亡。"
   },
   {
     "id": "tinker",
@@ -539,7 +539,7 @@
     "otherNightReminder": "The Tinker might die.",
     "reminders": ["Dead"],
     "setup": false,
-    "ability": "你随时都有可能会死亡（由说书人决定，但你因自己的能力死亡不算被处决；即使在夜晚，你也会在任何时候死去，而非需要参照网页版的修补匠死亡时点：修补匠不会死在被保护的夜晚）"
+    "ability": "你随时都有可能会死亡。（由说书人决定，但你因自己的能力死亡不算被处决；即使在夜晚，你也会在任何时候死去，而非需要参照网页版的修补匠死亡时点：修补匠不会死在被保护的夜晚）"
   },
   {
     "id": "moonchild",
@@ -694,7 +694,7 @@
   },
   {
     "id": "apprentice",
-    "name": "Apprentice",
+    "name": "学徒",
     "edition": "bmr",
     "team": "traveler",
     "firstNight": 1,
@@ -703,11 +703,11 @@
     "otherNightReminder": "",
     "reminders": ["Is the Apprentice"],
     "setup": false,
-    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil)."
+    "ability": "在你的第一个夜晚，如果你属于善良阵营，获得一个村民身份的技能。如果你属于邪恶阵营，获得一个爪牙身份的技能。"
   },
   {
     "id": "matron",
-    "name": "Matron",
+    "name": "宿管",
     "edition": "bmr",
     "team": "traveler",
     "firstNight": 0,
@@ -716,11 +716,11 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "Each day, you may choose up to 3 sets of 2 players to swap seats. Players may not leave their seats to talk in private."
+    "ability": "每个白天限三次，令两名玩家交换位置。玩家们不允许离开座位私聊。"
   },
   {
     "id": "judge",
-    "name": "Judge",
+    "name": "法官",
     "edition": "bmr",
     "team": "traveler",
     "firstNight": 0,
@@ -729,11 +729,11 @@
     "otherNightReminder": "",
     "reminders": ["No ability"],
     "setup": false,
-    "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail."
+    "ability": "整局游戏限一次，在一次其他玩家发起的提名投票结束后，你可以强制执行处决或否决已经通过的投票。"
   },
   {
     "id": "bishop",
-    "name": "Bishop",
+    "name": "教皇",
     "edition": "bmr",
     "team": "traveler",
     "firstNight": 0,
@@ -743,11 +743,11 @@
     "reminders": ["Nominate good",
         "Nominate evil"],
     "setup": false,
-    "ability": "Only the Storyteller can nominate. At least 1 opposite player must be nominated each day."
+    "ability": "只有说书人可以发起提名。每天，都会有至少一名与你阵营不同的玩家被提名。"
   },
   {
     "id": "voudon",
-    "name": "Voudon",
+    "name": "巫毒师",
     "edition": "bmr",
     "team": "traveler",
     "firstNight": 0,
@@ -756,7 +756,7 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "Only you and the dead can vote. They don't need a vote token to do so. A 50% majority is not required."
+    "ability": "只有你和死亡的玩家可以在提名中投票，这不会消耗投票标记。取消投票达半才能处决的限制。"
   },
   {
     "id": "clockmaker",
@@ -1036,7 +1036,7 @@
   },
   {
     "id": "fanggu",
-    "name": "蚀梦游魂",
+    "name": "染魂",
     "edition": "snv",
     "team": "demon",
     "firstNight": 0,
@@ -1046,7 +1046,7 @@
     "reminders": ["Dead",
         "Once"],
     "setup": true,
-    "ability": "每个夜晚*，选择一名玩家：该玩家死亡。第一个被该能力杀死的外来者会变成邪恶的蚀梦游魂，且你会代替那名玩家死亡。（+1外来者）"
+    "ability": "每个夜晚*，选择一名玩家：该玩家死亡。第一个被该能力杀死的外来者会变成邪恶的染魂，且你会代替那名玩家死亡。（+1外来者）"
   },
   {
     "id": "vigormortis",
@@ -1091,7 +1091,7 @@
     "ability": "每个夜晚*，选择一名玩家：该玩家死亡。村民的能力始终会获得错误的信息。在每个白天，如果没有玩家被处决，邪恶阵营获胜。"
   },
   {
-    "id": "barista",
+    "id": "咖啡师",
     "name": "Barista",
     "edition": "snv",
     "team": "traveler",
@@ -1102,11 +1102,11 @@
     "reminders": ["Sober & Healthy",
         "Ability twice"],
     "setup": false,
-    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which."
+    "ability": "每个夜晚，选择一名玩家与一项效果，持续到下个黄昏: 1)必定获取正确信息。2)技能生效两次。他知道你选择了什么。"
   },
   {
     "id": "harlot",
-    "name": "Harlot",
+    "name": "舞女",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
@@ -1115,11 +1115,11 @@
     "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
     "reminders": ["Dead"],
     "setup": false,
-    "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die."
+    "ability": "每个夜晚，选择一名存活玩家，如果他同意，你得知他的身份，但是你们可能一同死亡。"
   },
   {
     "id": "butcher",
-    "name": "Butcher",
+    "name": "刽子手",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
@@ -1128,11 +1128,11 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "Each day, after the 1st execution, you may nominate again."
+    "ability": "每个白天，在第一次处决后，你可以再次发起提名。"
   },
   {
     "id": "bonecollector",
-    "name": "Bone Collector",
+    "name": "寻骨者",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
@@ -1142,11 +1142,11 @@
     "reminders": ["No ability",
         "Has ability"],
     "setup": false,
-    "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk."
+    "ability": "整局游戏限一次，夜晚*，选择一名死亡的玩家，他恢复他的技能直到下个黄昏。"
   },
   {
     "id": "deviant",
-    "name": "Deviant",
+    "name": "怪咖",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
@@ -1155,7 +1155,7 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "If you were funny today, you cannot die by exile."
+    "ability": "如果你在白天表现的很搞笑，你在当天不能被流放。"
   },
   {
     "id": "noble",
@@ -1740,4 +1740,3 @@
     "ability": "Once per day, you may choose to kill an alive neighbour, if your other alive neighbour agrees."
   }
 ]
-
