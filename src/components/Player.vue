@@ -163,10 +163,10 @@
           >
             <font-awesome-icon icon="chair" />
             <template v-if="!player.id">
-              Claim seat
+              坐下
             </template>
             <template v-else-if="player.id === session.playerId">
-              Vacate seat
+              让座
             </template>
             <template v-else> Seat occupied</template>
           </li>

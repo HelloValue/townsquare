@@ -391,7 +391,7 @@
     "otherNightReminder": "The Chambermaid points to two players. Show the number signal (0, 1, 2, \u2026) for how many of those players wake tonight for their ability.",
     "reminders": [],
     "setup": false,
-    "ability": "每个夜晚，选择除自己以外的两名存活玩家：你会得知在这两名玩家中，因自身能力在今夜醒来的总玩家数。（例：侍女选择了旅店者板和被驱魔师禁止醒来的恶魔，则会得知1：旅店者板夜里会醒来，而恶魔被驱魔师禁止醒来）"
+    "ability": "每个夜晚，选择除自己以外的两名存活玩家：你会得知在这两名玩家中，因自身能力在今夜醒来的总玩家数。（例：侍女选择了旅店老板和被驱魔师禁止醒来的恶魔，则会得知1：旅店老板夜里会醒来，而恶魔被驱魔师禁止醒来）"
   },
   {
     "id": "exorcist",
@@ -569,7 +569,7 @@
   },
   {
     "id": "lunatic",
-    "name": "疯子",
+    "name": "狂人",
     "edition": "bmr",
     "team": "outsider",
     "firstNight": 7,
@@ -1023,7 +1023,7 @@
   },
   {
     "id": "pithag",
-    "name": "熬药巫婆",
+    "name": "炼药师",
     "edition": "snv",
     "team": "minion",
     "firstNight": 0,
@@ -1238,7 +1238,7 @@
   },
   {
     "id": "balloonist",
-    "name": "Balloonist",
+    "name": "热气球驾驶员",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 44,
@@ -1251,7 +1251,7 @@
         "Seen Demon",
         "Seen Traveller"],
     "setup": true,
-    "ability": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]"
+    "ability": "每个夜晚，你得知一名玩家。你得知的玩家均是不同身份类型。直到你每个身份类型都得知了一次。[+1外来者]"
   },
   {
     "id": "cultleader",
@@ -1281,7 +1281,7 @@
   },
   {
     "id": "amnesiac",
-    "name": "Amnesiac",
+    "name": "追忆者",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 12,
@@ -1290,7 +1290,7 @@
     "otherNightReminder": "If the Amnesiac's ability causes them to wake tonight: Wake the Amnesiac and run their ability.",
     "reminders": ["?"],
     "setup": false,
-    "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are."
+    "ability": "你不知道你的技能是什么。你每个白天都可以向说书人猜测一次，并得知你猜测的有多准确。"
   },
   {
     "id": "nightwatchman",
@@ -1425,7 +1425,7 @@
   },
   {
     "id": "cannibal",
-    "name": "Cannibal",
+    "name": "食人族",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 0,
@@ -1435,7 +1435,7 @@
     "reminders": ["Poisoned",
         "Died today"],
     "setup": false,
-    "ability": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution."
+    "ability": "你拥有最近被处决而死的玩家的技能。如果该玩家属于邪恶阵营，你中毒直到下一个善良玩家被处决。"
   },
   {
     "id": "snitch",
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "widow",
-    "name": "Widow",
+    "name": "寡妇",
     "edition": "",
     "team": "minion",
     "firstNight": 18,
@@ -1541,7 +1541,7 @@
     "reminders": ["Poisoned"],
     "remindersGlobal": ["Knows"],
     "setup": false,
-    "ability": "On your 1st night, look at the Grimoire and choose a player: they are poisoned. 1 good player knows a Widow is in play."
+    "ability": "在你的第一个夜晚，你查看魔典并选择一名玩家，使他中毒。一名善良玩家会得知本局存在寡妇。"
   },
   {
     "id": "fearmonger",

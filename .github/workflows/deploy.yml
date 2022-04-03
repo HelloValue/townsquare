@@ -2,13 +2,13 @@ name: Docker Image CI CD # Actions名称
 on:
   push:
     branches: 
-     - val-dev
+     - master
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@develop
+      uses: actions/checkout@master
     # 打包镜像推送到腾讯云容器镜像服务
     - name: Build the Docker image
       run: |
