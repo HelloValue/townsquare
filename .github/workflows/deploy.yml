@@ -1,8 +1,9 @@
 name: Docker Image CI CD # Actions名称
 on:
   pull_request:
-    types: [closed]
-     branches: 
+    types: 
+     - closed
+    branches: 
      - master
 jobs:
   build:
