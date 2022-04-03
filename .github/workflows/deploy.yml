@@ -1,23 +1,27 @@
-name: Deploy to GitHub Pages
+name: Docker Image CI CD # Actions名称
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [closed]
+     branches: 
+     - master
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }}
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-
-      - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: gh-pages
-          folder: dist
+    - name: checkout
+      uses: actions/checkout@master
+    # 打包镜像推送到腾讯云容器镜像服务
+    - name: Build the Docker image
+      run: |
+        docker login --username=${{ secrets.TECENT_DOCKER_USERNAME }} ccr.ccs.tencentyun.com --password=${{ secrets.TECENT_DOCKER_PASSWORD }}
+        docker build -t clocktower:latest -f Dockerfile .
+        docker tag clocktower ccr.ccs.tencentyun.com/caozenghuang/clocktower:latest
+        docker push ccr.ccs.tencentyun.com/caozenghuang/clocktower:latest
+    # 使用appleboy/ssh-action@master登录服务器执行拉取镜像脚本，服务器ip、用户名、密码配置方式同容器镜像服务配置方式一样
+    - name: ssh docker login
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.TECENT_SERVER }}
+        username: ${{ secrets.TECENT_SERVER_USER }}
+        password: ${{ secrets.TECENT_SERVER_PASSWORD }}
+        script: cd ~ && sh lizonghao.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
