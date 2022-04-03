@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@develop
     # 打包镜像推送到腾讯云容器镜像服务
     - name: Build the Docker image
       run: |
