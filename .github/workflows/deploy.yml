@@ -17,14 +17,14 @@ jobs:
         docker tag clocktower ccr.ccs.tencentyun.com/caozenghuang/clocktower:latest
         docker push ccr.ccs.tencentyun.com/caozenghuang/clocktower:latest
     # 将run.sh 复制到腾讯云服务器
-    # - name: Copy shell_script file to remote
-    #   uses: garygrossgarten/github-action-scp@release
-    #   with:
-    #     local: run.sh
-    #     remote: clocktower_run.sh
-    #     host: ${{ secrets.TECENT_SERVER }}
-    #     username: ${{ secrets.TECENT_SERVER_USER }}
-    #     password: ${{ secrets.TECENT_SERVER_PASSWORD }}
+    - name: Copy shell_script file to remote
+      uses: garygrossgarten/github-action-scp@release
+      with:
+        local: run.sh
+        remote: clocktower_run.sh
+        host: ${{ secrets.TECENT_SERVER }}
+        username: ${{ secrets.TECENT_SERVER_USER }}
+        password: ${{ secrets.TECENT_SERVER_PASSWORD }}
     # 使用appleboy/ssh-action@master登录服务器执行拉取镜像脚本，服务器ip、用户名、密码配置方式同容器镜像服务配置方式一样
     - name: ssh docker login
       uses: appleboy/ssh-action@master
@@ -32,4 +32,4 @@ jobs:
         host: ${{ secrets.TECENT_SERVER }}
         username: ${{ secrets.TECENT_SERVER_USER }}
         password: ${{ secrets.TECENT_SERVER_PASSWORD }}
-        script: cd ~ && sh clocktower_run.sh
+        script: cd ~ && sh clocktower_run.sh ${{ secrets.TECENT_DOCKER_USERNAME }} ${{ secrets.TECENT_DOCKER_USERNAME }}
