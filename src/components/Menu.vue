@@ -142,7 +142,7 @@
               v-if="session.voteHistory.length || !session.isSpectator"
               @click="toggleModal('voteHistory')"
             >
-              投票历史<em>[V]</em>
+              投票记录<em>[V]</em>
             </li>
             <li @click="leaveSession">
               Leave Session
@@ -193,11 +193,11 @@
           <!-- Help -->
           <li class="headline">Help</li>
           <li @click="toggleModal('reference')">
-            角色参考
+            角色说明
             <em>[R]</em>
           </li>
           <li @click="toggleModal('nightOrder')">
-            夜间顺序参考
+            夜间行动顺序
             <em>[N]</em>
           </li>
           <li @click="toggleModal('gameState')">

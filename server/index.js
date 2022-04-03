@@ -1,5 +1,5 @@
 const fs = require("fs");
-const https = require("https");
+const https = require("http");
 const WebSocket = require("ws");
 const client = require("prom-client");
 
@@ -25,7 +25,7 @@ const wss = new WebSocket.Server({
   verifyClient: info =>
     info.origin &&
     !!info.origin.match(
-      /^https?:\/\/([^.]+\.github\.io|localhost|clocktower\.online|eddbra1nprivatetownsquare\.xyz)/i
+      /^http?:\/\/([^.]+\.github\.io|localhost|192.168.1.17|81.68.165.248|clocktower\.online|eddbra1nprivatetownsquare\.xyz)/i
     )
 });
 
