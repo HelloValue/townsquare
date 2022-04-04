@@ -517,7 +517,7 @@
   },
   {
     "id": "fool",
-    "name": "弄臣",
+    "name": "小丑",
     "edition": "bmr",
     "team": "townsfolk",
     "firstNight": 0,
@@ -1172,7 +1172,7 @@
   },
   {
     "id": "bountyhunter",
-    "name": "Bounty Hunter",
+    "name": "赏金猎人",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 45,
@@ -1181,7 +1181,7 @@
     "otherNightReminder": "If the known evil player has died, point to another evil player. ",
     "reminders": ["Known"],
     "setup": true,
-    "ability": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]"
+    "ability": "游戏开始时，你得知一名邪恶玩家。如果该玩家死亡，当晚，你再得知一名其他邪恶玩家。[一位村民加入邪恶阵营]"
   },
   {
     "id": "pixie",
@@ -1212,7 +1212,7 @@
   },
   {
     "id": "preacher",
-    "name": "Preacher",
+    "name": "传教士",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 14,
@@ -1221,7 +1221,7 @@
     "otherNightReminder": "The Preacher chooses a player. If a Minion is chosen, wake the Minion and show the 'This character selected you' card and then the Preacher token.",
     "reminders": ["At a sermon"],
     "setup": false,
-    "ability": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability."
+    "ability": "每个夜晚，选择一名玩家，当你选中了爪牙时，他会得知自己被选中。被你选中的爪牙失去技能。"
   },
   {
     "id": "king",
@@ -1255,7 +1255,7 @@
   },
   {
     "id": "cultleader",
-    "name": "Cult Leader",
+    "name": "秘教领袖",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 47,
@@ -1264,7 +1264,7 @@
     "otherNightReminder": "If the cult leader changed alignment, show them the thumbs up good signal of the thumbs down evil signal accordingly.",
     "reminders": [],
     "setup": false,
-    "ability": "Each night, you become the alignment of an alive neighbour. If all good players choose to join your cult, your team wins."
+    "ability": "每个夜晚，你的阵营变得与一名相邻的存活玩家相同。如果所有善良玩家都加入了你的教派，你的阵营获胜。"
   },
   {
     "id": "lycanthrope",
@@ -1320,7 +1320,7 @@
   },
   {
     "id": "fisherman",
-    "name": "Fisherman",
+    "name": "渔夫",
     "edition": "",
     "team": "townsfolk",
     "firstNight": 0,
@@ -1329,7 +1329,7 @@
     "otherNightReminder": "",
     "reminders": ["No ability"],
     "setup": false,
-    "ability": "Once per game, during the day, visit the Storyteller for some advice to help you win."
+    "ability": "整局游戏限一次，白天，让说书人给予你一条可以帮助你的阵营获胜的建议。"
   },
   {
     "id": "huntsman",
@@ -1518,7 +1518,7 @@
   },
   {
     "id": "politician",
-    "name": "Politician",
+    "name": "政治家",
     "edition": "",
     "team": "outsider",
     "firstNight": 0,
@@ -1527,7 +1527,7 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "If you were the player most responsible for your team losing, you change alignment & win, even if dead."
+    "ability": "如果你是对你的阵营落败负最大责任的人，你改变阵营并获胜，即使你已经死亡。"
   },
   {
     "id": "widow",
@@ -1571,7 +1571,7 @@
   },
   {
     "id": "goblin",
-    "name": "Goblin",
+    "name": "哥布林",
     "edition": "",
     "team": "minion",
     "firstNight": 0,
@@ -1580,7 +1580,7 @@
     "otherNightReminder": "",
     "reminders": ["Claimed"],
     "setup": false,
-    "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins."
+    "ability": "白天，你可以公开声称自己是哥布林，如果你在当天因为提名而被处决，你的阵营获胜。"
   },
   {
     "id": "mephit",
@@ -1639,7 +1639,7 @@
   },
   {
     "id": "lilmonsta",
-    "name": "Lil' Monsta",
+    "name": "罪孽之种",
     "edition": "",
     "team": "demon",
     "firstNight": 16,
@@ -1650,7 +1650,7 @@
     "remindersGlobal": ["Is the Demon",
         "Dead"],
     "setup": true,
-    "ability": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]"
+    "ability": "每个夜晚，爪牙们选择谁来保管罪孽之种，该玩家被视为恶魔。每个夜晚*，一名玩家被杀害。[+1爪牙]"
   },
   {
     "id": "lleech",
@@ -1697,7 +1697,7 @@
   },
   {
     "id": "leviathan",
-    "name": "Leviathan",
+    "name": "利维坦",
     "edition": "",
     "team": "demon",
     "firstNight": 53,
@@ -1711,7 +1711,7 @@
         "Day 5",
         "Good player executed"],
     "setup": false,
-    "ability": "If more than 1 good player is executed, you win. All players know you are in play. After day 5, evil wins."
+    "ability": "如果超过一名善良阵营玩家被处决，邪恶阵营获胜。所有玩家都知道你在游戏中。第五个白天结束时，邪恶阵营获胜。"
   },
   {
     "id": "riot",
